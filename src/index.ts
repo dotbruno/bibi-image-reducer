@@ -19,10 +19,6 @@ interface IFile {
   size: number;
 }
 
-interface IRequest extends Request {
-  file: any;
-}
-
 export function imageReducerInRouter(
   destination: string,
   quality: number,
@@ -42,7 +38,7 @@ export function imageReducerInRouter(
     return { width: null, height: null };
   }
 
-  return async function (request: IRequest, _: Response, next: NextFunction) {
+  return async function (request: Request, _: Response, next: NextFunction) {
     if (request && request.file) {
       const file = request.file;
 
