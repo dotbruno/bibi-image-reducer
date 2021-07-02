@@ -42,11 +42,7 @@ export function imageReducerInRouter(
     return { width: null, height: null };
   }
 
-  return async function (
-    request?: IRequest,
-    _?: Response,
-    next?: NextFunction
-  ) {
+  return async function (request: IRequest, _: Response, next: NextFunction) {
     if (request && request.file) {
       const file = request.file;
 

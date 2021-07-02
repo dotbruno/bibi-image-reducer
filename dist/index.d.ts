@@ -16,6 +16,6 @@ interface IFile {
 interface IRequest extends Request {
     file: any;
 }
-export declare function imageReducerInRouter(destination: string, quality: number, resize?: IBibiImgReducerMulterResize | number): (request?: IRequest, _?: Response, next?: NextFunction) => Promise<void>;
+export declare function imageReducerInRouter(destination: string, quality: number, resize?: IBibiImgReducerMulterResize | number): (request: IRequest, _: Response, next: NextFunction) => Promise<void>;
 export declare function imageReducer(file: IFile | any, destination: string, quality: number, resize?: IBibiImgReducerMulterResize | number): Promise<void>;
 export {};
