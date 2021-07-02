@@ -7,6 +7,14 @@
   "scripts": {
     "build": "tsc --declaration"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotbruno/bibi-image-reducer.git"
+  },
+  "homepage": "https://github.com/dotbruno/bibi-image-reducer",
+  "bugs": {
+    "url": "https://github.com/dotbruno/bibi-image-reducer/issues"
+  },
   "keywords": [
     "image reducer",
     "image formatter",
